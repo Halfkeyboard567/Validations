@@ -19,6 +19,13 @@
     width: 100%;
 }  
 
-.navbar-toggler-icon {
-  color: white;
+/* Estilo para el botón de toggler cuando está activo (seleccionado) */
+.navbar-toggler:active {
+  border-color: #FBB41C; /* Color amarillo */
+  box-shadow: 0 0 10px #FBB41C; 
+}
+
+.bi-list {
+  color:white;/* Color blanco, para el hamburguer menu*/
+  font-size: 2rem;
 }
