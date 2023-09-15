@@ -1,3 +1,24 @@
 .hidden {
     display: none;
   }
+
+.custom-navbar {
+    background-color: #144A9A; /* Fondo azul para el navigation bar */
+}
+
+.custom-navbar .nav-link {
+    color: white; /* Texto blanco */
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.custom-navbar .nav-link:hover {
+    background-color: #FBB41C; /* Fondo amarillo al pasar el mouse */
+    width: 100%;
+}  
+
+.navbar-toggler-icon {
+  color: white;
+}
