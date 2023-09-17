@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validations</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="LOGO_PUPR.png" alt="Logo" style="width: 450px; height: 100px; margin: 15px;">
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler order-first" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav"> <!-- justify-content-end-->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Students Applications</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Validations Reports</a>
+                    </li>   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Users</a>
+                    </li>       
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="tab-content">
+            <div class="container" id="AdminStudentsApplication" role="tabpanel">
+                <h1 class="text-center">Students for Validations</h1>
+            </div>
+        </div>
+        
+        <td>
+            <!--Nested Table-->
+            <table class="list" id="StudentList" style="background-color: #6d9cc2;">
+                <!--Table Head-->
+                <thead>
+                    <!--Row-2-->
+                    <tr>
+                        <th>Student Name</th>
+                        <th> Student Email</th>
+                        <th>Student Phone</th>
+                        <th>Department</th>
+                        <th>Actions</th>
+                        <th>Validation Process</th>
+                    </tr>
+                </thead>
+                <!--Table Body-->
+                <tbody>
+                </tbody>
+            </table>
+        </td>
+    </section>
+
+    <script>
+        // Insert New User Record
+function insertNewRecord(data) {
+    var table = document.getElementById("StudentList").getElementsByTagName('tbody')[0];
+    var newRow = table.insertRow(table.length);
+    cell1 = newRow.insertCell(0);
+    cell1.innerHTML = data.userName;
+    cell2 = newRow.insertCell(1);
+    cell2.innerHTML = data.rollNo;
+    cell3 = newRow.insertCell(2);
+    cell3.innerHTML = data.stdClass;
+    cell4 = newRow.insertCell(3);
+    cell4.innerHTML = data.tsub;
+    cell5 = newRow.insertCell(4);
+    cell5.innerHTML = data.age;
+    cell5 = newRow.insertCell(5);
+    cell5.innerHTML = `<a onClick="onEdit(this)">Edit</a>
+    <a onClick="onDelete(this)">Delete</a>`;
+}
+    </script>
+</body>
+</html>

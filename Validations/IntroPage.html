@@ -197,6 +197,17 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("A password reset link has been sent to your email.");
         });
     });
+
+    // Get Values From Form
+function readStudentsData() {
+    var formData = {};
+    // Get Values From  Input
+    formData["NSAFullName"] = document.getElementById("NSAFullName").value;
+    formData["NSAEmail"] = document.getElementById("NSAEmail").value;
+    formData["NSAPhoneNumber"] = document.getElementById("NSAPhoneNumber").value;
+    // return Form Data
+    return formData;
+}
 });
       </script>
       
