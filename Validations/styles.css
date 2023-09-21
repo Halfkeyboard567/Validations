@@ -48,3 +48,28 @@ td, th {
   text-align: left;
   padding: 8px;
 }
+
+/*Validation Process page*/
+
+.validation-process-bar {
+  background-color: #144A9A; /* Color de fondo de la barra */
+  color: white; /* Color del texto */
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.validation-process-bar button {
+  margin: 0 10px;
+}
+
+/* Estilos para los botones */
+.validation-process-bar .btn {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
