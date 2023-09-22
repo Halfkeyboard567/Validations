@@ -30,22 +30,47 @@
   font-size: 2rem;
 }
 
+h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color:#144A9A; 
+}
+
+label {
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif; 
+}
+
+/*IntroPage*/
+button [type=submit] {
+  background-color: #144A9A;
+  color: #F8F9FA; /*Color del texto del botón*/
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
 /* AdminPage*/
 
 table{
   border-collapse: collapse;
   text-align: center;
 }
+
 table.list{
   width:100%;
   text-align: center;
 }
+
 table.list td{
   text-align: center;
 }
+
 td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
+  border: 1px solid #F8F9FA;
+  text-align: middle;
+  background-color: #f8f9fae1;
+  color:#144A9A;
+  font-family: Helvetica, Arial, sans-serif;
   padding: 8px;
 }
 
