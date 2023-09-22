@@ -78,6 +78,7 @@
                 </div>
 
             <!-- New Student Application page -->
+                
                 <div class="container hidden" id="Trascript-NewStudentApplication" role="tabpanel">
                     <h1 class="text-center">Sign Up for Validations!</h1>
                     <form id="StudentForm">
@@ -132,6 +133,10 @@
                             <label for="formFile" class="form-label">Transcript</label>
                             <input class="form-control" type="file" id="formFile">
                         </div>
+                         <button type="button" class="btn btn-primary" id="addMore">
+                                <i class="bi bi-plus"></i> Add another school with transcript
+                         </button> 
+                        <div id ="additionalFields"></div>
                         <!-- Submit button-->
                         <div class="mb-3">
                             <button type="submit" class="btn btn-primary active">Submit Now</button>
@@ -209,7 +214,7 @@ function readStudentsData() {
     return formData;
 }
 });
-      </script>
+    </script>
       
 </body>
 </html>
