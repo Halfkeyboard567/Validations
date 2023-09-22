@@ -24,13 +24,13 @@
             <div class="collapse navbar-collapse" id="navbarNav"> <!-- justify-content-end-->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#" onclick="showAdminHome()">Home</a>
                     </li>    
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Students Applications</a>
+                        <a class="nav-link" href="#" onclick="showStudentsApplication()">Students Applications</a>
                     </li> 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Validations Reports</a>
+                        <a class="nav-link" href="#" onclick="showValidationReport()">Validations Reports</a>
                     </li>   
                     <li class="nav-item">
                         <a class="nav-link" href="#">Users</a>
@@ -41,12 +41,17 @@
     </nav>
     <section>
         <div class="tab-content">
+            <div class="container hidden" id="AdminHome" role="tabpanel">
+                <h1>Home</h1>
+            </div>
+
+       
             <div class="container" id="AdminStudentsApplication" role="tabpanel">
                 <h1 class="text-center">Students for Validations</h1>
-            </div>
-        </div>
+           
         
-        <td>
+        
+            <td>
             <!--Nested Table-->
             <table class="list" id="StudentList" style="background-color: #6d9cc2;">
                 <!--Table Head-->
@@ -65,7 +70,12 @@
                 <tbody>
                 </tbody>
             </table>
-        </td>
+            </td>
+            </div>
+            <div class="container hidden" id="AdminValidationReport" role="tabpanel">
+                <h1>Validation Reports</h1>
+            </div>
+        </div>
     </section>
 
     <script>
@@ -87,6 +97,24 @@ function insertNewRecord(data) {
     cell5.innerHTML = `<a onClick="onEdit(this)">Edit</a>
     <a onClick="onDelete(this)">Delete</a>`;
 }
+
+function showAdminHome() {
+            document.getElementById('AdminStudentsApplication').classList.add('hidden');
+          document.getElementById('AdminValidationReport').classList.add('hidden');
+          document.getElementById('AdminHome').classList.remove('hidden');
+        }
+        function showStudentsApplication() {
+            document.getElementById('AdminStudentsApplication').classList.remove('hidden');
+          document.getElementById('AdminValidationReport').classList.add('hidden');
+          document.getElementById('AdminHome').classList.add('hidden');
+        }
+
+        function showValidationReport() {
+            document.getElementById('AdminStudentsApplication').classList.add('hidden');
+          document.getElementById('AdminValidationReport').classList.remove('hidden');
+          document.getElementById('AdminHome').classList.add('hidden');
+        }
+
     </script>
 </body>
 </html>
