@@ -19,6 +19,8 @@
     width: 100%;
 }  
 
+.custom-input
+
 /* Estilo para el botón de toggler cuando está activo (seleccionado) */
 .navbar-toggler:active {
   border-color: #FBB41C; /* Color amarillo */
@@ -42,15 +44,32 @@ label {
 }
 
 /*IntroPage*/
-button [type=submit] {
-  background-color: #144A9A;
-  color: #F8F9FA; /*Color del texto del botón*/
-  font-size: 20px;
-  padding: 10px 20px;
+/* Customize the btn-custom button. For the dd another school and transcription button */
+.btn-custom {
+  background-color: #F8F9FA;
+  color: #144A9A; /* Text color*/
+  padding: 5px 20px; /* Adjust the top and bottom padding to 10px and the left and right padding to 20px */
+  border-color: #144A9A;
+  border-radius: 5px; /* Adds rounded corners */
+  margin-bottom: 10px; /* 10px margin below the button */
+  font-weight: bold; /* Makes the text bold */
+  font-family: Helvetica, Arial, sans-serif; 
 }
 
-/* AdminPage*/
+/* Customize the btn-success button */
+.btn-success {
+  background-color: #28a745; /* Change the background color to green (success color). */
+  color: white; /* Change the text colour to white */
+}
 
+/* Customize the active button (you can add this rule only if you want specific styles for active buttons). */
+.btn-custom.active {
+  background-color: #144A9A; /* Changes the background colour when the button is active. */
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;  /*Text color*/
+ }
+
+/* AdminPage*/
 table{
   border-collapse: collapse;
   text-align: center;
