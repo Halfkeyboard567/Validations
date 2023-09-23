@@ -19,8 +19,6 @@
     width: 100%;
 }  
 
-.custom-input
-
 /* Estilo para el botón de toggler cuando está activo (seleccionado) */
 .navbar-toggler:active {
   border-color: #FBB41C; /* Color amarillo */
