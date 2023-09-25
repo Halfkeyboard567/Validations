@@ -47,10 +47,10 @@
             </div>
 
             <div class="container hidden" id="Transcript-Login" role="tabpanel">
-                <form>
+                <form method="POST">
                     <!-- ID input -->
                     <div class="form-outline mb-3 col-sm-3">
-                        <label class="form-label" for="loginName">ID: </label>
+                        <label class="form-label" for="loginID">ID: </label>
                         <input type="text" id="loginID" class="form-control" required/>
                     </div>
 
@@ -68,7 +68,13 @@
 
                      <!-- Submit button -->
                      <button type="submit" class="btn btn-primary active">Sign in</button>
+
+                     <p id="error-message" style="color: red;"></p>
+
                 </form>
+                {% if error_message %}
+                <p>{{ error_message }}</p>
+                {% endif %}
             </div>
               <!-- Forgot Password Page-->
                 <div class="container hidden" id="ForgotPassword" role="tabpanel">
@@ -219,5 +225,7 @@ function readStudentsData() {
 });
     </script>
       
+
+      <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

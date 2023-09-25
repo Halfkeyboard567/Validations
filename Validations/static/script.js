@@ -25,3 +25,30 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('additionalFields').appendChild(newTranscriptDiv);
     });
 });
+
+// Log_In
+document.addEventListener("DOMContentLoaded", function () {
+    const loginForm = document.getElementById("Transcript-Login");
+    const errorMessage = document.getElementById("error-message");
+
+    loginForm.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        const loginID = document.getElementById("loginID").value;
+        const loginPassword = document.getElementById("loginPassword").value;
+
+        const response = await fetch("/login", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ loginID, loginPassword }),
+        });
+
+        if (response.status === 200) {
+            window.location.href = "/welcome";
+        } else {
+            errorMessage.textContent = "Invalid username or password. Please try again.";
+        }
+    });
+});
