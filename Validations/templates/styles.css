@@ -41,6 +41,16 @@ h1 {
   font-family: Helvetica, Arial, sans-serif; 
 }
 
+h3 {
+  color:#144A9A;
+  
+}
+
+h4 {
+  font-weight: bold; 
+  font-family: Helvetica, Arial, sans-serif; 
+}
+
 label {
   font-weight: bold;
   font-family: Helvetica, Arial, sans-serif; 
@@ -49,7 +59,7 @@ label {
 /* Announcement */
 .announcement {
   position: fixed;
-  top: 60%; /* Aligns the ad vertically in the center */ 
+  top: 58%; /* Aligns the ad vertically in the center */ 
   right: 30px; /* Positions the ad 20px from the right edge */ 
   padding: 10px; /* Adds internal space to the ad */ 
   transform: translateY(-50%); /* Corrects the vertical alignment */ 
@@ -66,9 +76,9 @@ label {
 }
 
 
-/*IntroPage*/
+/*IndexPage*/
 /* Customize the btn-custom button 1. For the Log In. */
-.btn-custom.btn-custom-1:hover {
+.btn-custom-1:hover {
   background-color: #FBB41C;
   color:#F8F9FA;
   display: block;
@@ -109,6 +119,7 @@ label {
   padding: 5px 20px; /* Adjust the top and bottom padding to 10px and the left and right padding to 20px */
   border-color: #144A9A;
   border-radius: 30px; /* Adds rounded corners */
+  margin-top: 20px;
   margin-bottom: 10px; /* 10px margin below the button */
   font-weight: bold; /* Makes the text bold */
   font-family: Helvetica, Arial, sans-serif; 
@@ -168,4 +179,47 @@ td, th {
   border-radius: 5px;
   padding: 5px 10px;
   font-size: 14px;
+}
+
+/* Select role page */
+.btn-person-vcard, .btn-workspace {
+  width: 150px;
+  height: 150px;
+  background-color: #144A9A; /* Background color */ 
+  color: white; /* Text color */
+  font-size: 25px; /* Larger font size */
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif; 
+  padding: 20px 20px; /* Spacing around text */ 
+  border: none; /* No border */ 
+  border-radius: 10px; /* Rounded edges */ 
+  margin: 10px; /* Margin around buttons */ 
+  cursor: pointer; /* Change cursor on hover */
+  
+}
+
+.custom-container {
+  width: 400px;
+  height: 210px;
+  background-color: #FBB41C;
+  margin: 0 auto; 
+  padding: 20px;
+  color:#F8F9FA;
+  text-align: center;
+}
+
+/* Admin login container */ 
+.login-container {
+  width: 400px;
+  background-color: #144A9A; /* Background color */ 
+  color: white; /* Text color */
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif; 
+  padding: 20px 20px; /* Spacing around text */ 
+  border: none; /* No border */ 
+  border-radius: 10px; /* Rounded edges */ 
+  margin: 10px; /* Margin around buttons */
+  margin: 0 auto;  
+  cursor: pointer; /* Change cursor on hover */
+  text-align: center; /* Center text alignment */
 }
