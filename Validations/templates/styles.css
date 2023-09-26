@@ -2,6 +2,12 @@
     display: none;
   }
 
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
 .custom-navbar {
     background-color: #144A9A; /* Fondo azul para el navigation bar */
 }
