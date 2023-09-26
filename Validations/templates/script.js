@@ -32,24 +32,24 @@ function redirectToRoleSelection() {
     // Redirects you to the role selection page.
     window.location.href = "select-role.html";
 }
-
+/*
 function showSignUp() {
     document.getElementById('Transcript-Home').classList.add('hidden');
     document.getElementById('Transcript-Login').classList.add('hidden');
     document.getElementById('ForgotPassword').classList.add('hidden');
-    document.getElementById('Trascript-NewStudentApplication').classList.remove('hidden');
+    document.getElementById('Transcript-NewStudentApplication').classList.remove('hidden');
   }
 
   function showSignIn() {
   document.getElementById('Transcript-Home').classList.add('hidden');
     document.getElementById('Transcript-Login').classList.remove('hidden');
     document.getElementById('ForgotPassword').classList.add('hidden');
-    document.getElementById('Trascript-NewStudentApplication').classList.add('hidden');
+    document.getElementById('Transcript-NewStudentApplication').classList.add('hidden');
   }
 
   function showHome() {
       document.getElementById('Transcript-Login').classList.add('hidden');
-    document.getElementById('Trascript-NewStudentApplication').classList.add('hidden');
+    document.getElementById('Transcript-NewStudentApplication').classList.add('hidden');
     document.getElementById('ForgotPassword').classList.add('hidden');
     document.getElementById('Transcript-Home').classList.remove('hidden');
   }
@@ -59,7 +59,22 @@ function showSignUp() {
       document.getElementById('ForgotPassword').classList.remove('hidden');
 
   }
+  */
 
+  function showSignUp() {
+    document.getElementById('Transcript-Home').classList.add('hidden');
+
+    document.getElementById('Transcript-NewStudentApplication').classList.remove('hidden');
+  }
+
+
+
+  function showHome() {
+ 
+    document.getElementById('Transcript-NewStudentApplication').classList.add('hidden');
+ 
+    document.getElementById('Transcript-Home').classList.remove('hidden');
+  }
 // Log_In
 document.addEventListener("DOMContentLoaded", function () {
     const loginForm = document.getElementById("Transcript-Login");
