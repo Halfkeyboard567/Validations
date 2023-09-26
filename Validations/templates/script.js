@@ -58,7 +58,6 @@ function showSignUp() {
   function showForgotPassword() {
       document.getElementById('Transcript-Login').classList.add('hidden');
       document.getElementById('ForgotPassword').classList.remove('hidden');
-
   }
  
 

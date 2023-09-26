@@ -1,6 +1,6 @@
 .hidden {
-    display: none;
-  }
+  display: none;
+}
 
 header {
   display: flex;
@@ -49,8 +49,7 @@ h1 {
 }
 
 h3 {
-  color:#144A9A;
-  
+  color:#144A9A; 
 }
 
 h4 {
@@ -217,7 +216,10 @@ td, th {
 
 /* Admin login container */ 
 .login-container {
+  display: flex;
+  flex-direction: column;
   width: 400px;
+  height: 500px;
   background-color: #144A9A; /* Background color */ 
   color: white; /* Text color */
   font-weight: bold;
@@ -229,4 +231,7 @@ td, th {
   margin: 0 auto;  
   cursor: pointer; /* Change cursor on hover */
   text-align: center; /* Center text alignment */
+  justify-content: center;
 }
+
+.btn-
