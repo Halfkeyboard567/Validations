@@ -53,13 +53,14 @@ function showSignUp() {
     document.getElementById('ForgotPassword').classList.add('hidden');
     document.getElementById('Transcript-Home').classList.remove('hidden');
   }
+ */
 
   function showForgotPassword() {
       document.getElementById('Transcript-Login').classList.add('hidden');
       document.getElementById('ForgotPassword').classList.remove('hidden');
 
   }
-  */
+ 
 
   function showSignUp() {
     document.getElementById('Transcript-Home').classList.add('hidden');
