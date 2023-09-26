@@ -216,7 +216,6 @@ td, th {
 
 /* Admin login container */ 
 .login-container {
-  display: flex;
   flex-direction: column;
   width: 400px;
   height: 500px;
@@ -234,4 +233,3 @@ td, th {
   justify-content: center;
 }
 
-.btn-
