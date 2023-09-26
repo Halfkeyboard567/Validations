@@ -67,14 +67,14 @@ label {
   position: fixed;
   top: 58%; /* Aligns the ad vertically in the center */ 
   right: 30px; /* Positions the ad 20px from the right edge */ 
-  padding: 10px; /* Adds internal space to the ad */ 
+  padding: 8px; /* Adds internal space to the ad */ 
   transform: translateY(-50%); /* Corrects the vertical alignment */ 
   text-align: right; /* Aligns the text to the right */
 }
 
 .announcement p {
   margin: 0;
-  font-size: 55px;
+  font-size: 54px;
   font-weight: bold;
   color: #144A9A; 
   display: inline-block;
@@ -218,7 +218,7 @@ td, th {
 .login-container {
   flex-direction: column;
   width: 400px;
-  height: 500px;
+  height: 300px;
   background-color: #144A9A; /* Background color */ 
   color: white; /* Text color */
   font-weight: bold;
@@ -233,3 +233,14 @@ td, th {
   justify-content: center;
 }
 
+.btn-signin {
+  width: 200px;
+  background-color: #FBB41C;
+  color: white; 
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+}
