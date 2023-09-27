@@ -25,7 +25,8 @@
     
     <section>
     <div class="login-container" id="Transcript-Login" role="tabpanel">
-        <form>
+        <form method="post" action={% url 'login' %}>
+            {% csrf_token %}
             <h4>Login to Your Account</h4>
             <!-- Username or email input -->
             <div class="form-outline mb-3 col-sm-14">
