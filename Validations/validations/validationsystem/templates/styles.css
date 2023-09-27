@@ -1,0 +1,246 @@
+.hidden {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.custom-navbar {
+    background-color: #144A9A; /* Fondo azul para el navigation bar */
+}
+
+.custom-navbar .nav-link {
+    color: white; /* Texto blanco */
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.custom-navbar .nav-link:hover {
+  background-color: #FBB41C; /* Fondo amarillo al pasar el mouse */
+  width: 100%;
+}  
+
+/* Estilo para el botón de toggle/hamburguer menu cuando está activo (seleccionado) */
+.navbar-toggler:active {
+  border-color: #FBB41C; /* Color amarillo */
+  box-shadow: 0 0 10px #FBB41C; 
+}
+
+.bi-list {
+  color:white; /* White color, for the hamburger menu*/
+  font-size: 2rem;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color:#144A9A;
+  font-weight: bold; 
+  font-family: Helvetica, Arial, sans-serif; 
+}
+
+h3 {
+  color:#144A9A; 
+}
+
+h4 {
+  font-weight: bold; 
+  font-family: Helvetica, Arial, sans-serif; 
+}
+
+label {
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif; 
+}
+
+/* Announcement */
+.announcement {
+  position: fixed;
+  top: 58%; /* Aligns the ad vertically in the center */ 
+  right: 30px; /* Positions the ad 20px from the right edge */ 
+  padding: 8px; /* Adds internal space to the ad */ 
+  transform: translateY(-50%); /* Corrects the vertical alignment */ 
+  text-align: right; /* Aligns the text to the right */
+}
+
+.announcement p {
+  margin: 0;
+  font-size: 54px;
+  font-weight: bold;
+  color: #144A9A; 
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+/*IndexPage*/
+/* Customize the btn-custom button 1. For the Log In. */
+.btn-custom-1:hover {
+  background-color: #FBB41C;
+  color:#F8F9FA;
+  display: block;
+}
+
+.btn-custom-1{
+  background-color: #144A9A;
+  color: #F8F9FA; /* Text color*/
+  border-color: #144A9A;
+  border-radius: 5px; /* Adds rounded corners */
+  font-size: large;
+  font-weight: bold; /* Makes the text bold */
+  font-family: Helvetica, Arial, sans-serif; 
+}
+
+
+/* Customize the btn-custom button 2. For the add another school and transcription button */
+.btn-custom-2 {
+  background-color: #F8F9FA;
+  color: #144A9A; /* Text color*/
+  padding: 5px 20px; /* Adjust the top and bottom padding to 10px and the left and right padding to 20px */
+  border-color: #144A9A;
+  border-radius: 5px; /* Adds rounded corners */
+  margin-bottom: 10px; /* 10px margin below the button */
+  font-weight: bold; /* Makes the text bold */
+  font-family: Helvetica, Arial, sans-serif; 
+}
+
+/* Customize the btn-custom button 3 */
+.btn-custom.btn-custom-3:hover {
+  background-color: #FBB41C;
+  color:#F8F9FA;
+}
+
+.btn-custom-3 {
+  background-color: #144A9A;
+  color: #F8F9FA; /* Text color*/
+  padding: 5px 20px; /* Adjust the top and bottom padding to 10px and the left and right padding to 20px */
+  border-color: #144A9A;
+  border-radius: 30px; /* Adds rounded corners */
+  margin-top: 20px;
+  margin-bottom: 10px; /* 10px margin below the button */
+  font-weight: bold; /* Makes the text bold */
+  font-family: Helvetica, Arial, sans-serif; 
+}
+
+/* Customize the active button (you can add this rule only if you want specific styles for active buttons). */
+.btn-custom.active {
+  background-color: #144A9A; /* Changes the background colour when the button is active. */
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;  /*Text color*/
+ }
+
+/* AdminPage*/
+table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table.list {
+  width:100%;
+  text-align: center;
+}
+
+table.list td {
+  text-align: center;
+}
+
+td, th {
+  border: 1px solid #F8F9FA;
+  text-align: middle;
+  background-color: #f8f9fae1;
+  color:#144A9A;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 8px;
+}
+
+/*Validation Process page*/
+
+.validation-process-bar {
+  background-color: #144A9A; /* Color de fondo de la barra */
+  color: white; /* Color del texto */
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.validation-process-bar button {
+  margin: 0 10px;
+}
+
+/* Estilos para los botones */
+.validation-process-bar .btn {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+/* Select role page */
+.btn-person-vcard, .btn-workspace {
+  width: 150px;
+  height: 150px;
+  background-color: #144A9A; /* Background color */ 
+  color: white; /* Text color */
+  font-size: 25px; /* Larger font size */
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif; 
+  padding: 20px 20px; /* Spacing around text */ 
+  border: none; /* No border */ 
+  border-radius: 10px; /* Rounded edges */ 
+  margin: 10px; /* Margin around buttons */ 
+  cursor: pointer; /* Change cursor on hover */
+  
+}
+
+.custom-container {
+  width: 400px;
+  height: 210px;
+  background-color: #FBB41C;
+  margin: 0 auto; 
+  padding: 20px;
+  color:#F8F9FA;
+  text-align: center;
+}
+
+/* Admin login container */ 
+.login-container {
+  flex-direction: column;
+  width: 400px;
+  height: 300px;
+  background-color: #144A9A; /* Background color */ 
+  color: white; /* Text color */
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif; 
+  padding: 20px 20px; /* Spacing around text */ 
+  border: none; /* No border */ 
+  border-radius: 10px; /* Rounded edges */ 
+  margin: 10px; /* Margin around buttons */
+  margin: 0 auto;  
+  cursor: pointer; /* Change cursor on hover */
+  text-align: center; /* Center text alignment */
+  justify-content: center;
+}
+
+.btn-signin {
+  width: 200px;
+  background-color: #FBB41C;
+  color: white; 
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+}
